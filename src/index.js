@@ -17,29 +17,18 @@ const BookList = () => {
 };
 
 const Books = () => {
+  const title = "House of Flame and Shadow";
+  const author = "Sarah J. Maas";
+
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src="./images/book-1.jpg" alt={title} />
+      <h2>{title}</h2>
+      <h4>{author}</h4>
     </article>
   );
 };
 
-const Image = () => (
-  <div>
-    <img src="./images/book-1.jpg" alt="House of Flame and Shadow" />
-  </div>
-);
-const Title = () => <h2>House of Flame and Shadow</h2>;
-const Author = () => {
-  const inlineHeadingStyles = {
-    color: "#617d98",
-    fontSize: "0.75rem",
-    marginTop: "0.5rem",
-  };
-  return <h4 style={inlineHeadingStyles}>Sarah J. Maas</h4>;
-};
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<BookList />);
