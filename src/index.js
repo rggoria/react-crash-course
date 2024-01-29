@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import book1 from "./assets/images/book-1.jpg";
+
 // Reference Link:
 // https://www.amazon.com/Best-Sellers-Books/zgbs/books
 
@@ -26,10 +28,12 @@ const Books = () => {
 };
 
 const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/91jbHTNpy6L._AC_UL600_SR600,400_.jpg"
-    alt="House of Flame and Shadow"
-  />
+  <div>
+    {/* file from public folder */}
+    <img src="./images/book-1.jpg" alt="House of Flame and Shadow" />
+    {/* file from public folder */}
+    <img src={book1} alt="House of Flame and Shadow" />
+  </div>
 );
 const Title = () => <h2>House of Flame and Shadow</h2>;
 const Author = () => <h4>Sarah J. Maas</h4>;
