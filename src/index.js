@@ -10,11 +10,13 @@ const books = [
     title: "House of Flame and Shadow",
     author: "Sarah J. Maas",
     img: "./images/book-1.jpg",
+    id: 1,
   },
   {
     title: "Atomic Habits",
     author: "James Clear",
     img: "https://m.media-amazon.com/images/I/81YkqyaFVEL._SY342_.jpg",
+    id: 2,
   },
 ];
 
@@ -22,8 +24,8 @@ const BookList = () => {
   return (
     <section className="booklist">
       {books.map((book) => {
-        const { img, title, author } = book;
-        return <Books img={img} title={title} author={author} />;
+        const { img, title, author, id } = book;
+        return <Books img={img} title={title} author={author} key={id} />;
       })}
     </section>
   );
