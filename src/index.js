@@ -9,6 +9,12 @@ const title = "House of Flame and Shadow";
 const author = "Sarah J. Maas";
 const img = "./images/book-1.jpg";
 
+const someFunc = (param1, param2) => {
+  console.log(param1, param2);
+};
+
+someFunc("Hello", "Ma!");
+
 const BookList = () => {
   return (
     <section className="booklist">
