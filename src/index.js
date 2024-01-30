@@ -5,6 +5,10 @@ import "./index.css";
 // Reference Link:
 // https://www.amazon.com/Best-Sellers-Books/zgbs/books
 
+const title = "House of Flame and Shadow";
+const author = "Sarah J. Maas";
+const img = "./images/book-1.jpg";
+
 const BookList = () => {
   return (
     <section className="booklist">
@@ -17,12 +21,9 @@ const BookList = () => {
 };
 
 const Books = () => {
-  const title = "House of Flame and Shadow";
-  const author = "Sarah J. Maas";
-
   return (
     <article className="book">
-      <img src="./images/book-1.jpg" alt={title} />
+      <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
     </article>
