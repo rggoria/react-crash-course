@@ -32,8 +32,9 @@ const BookList = () => {
 };
 
 const EventExamples = () => {
-  const handleFormInput = () => {
-    alert("Input is pressed");
+  const handleFormInput = (e) => {
+    console.log(`Input Name: ${e.target.name}`);
+    console.log(`Input Value: ${e.target.value}`);
   };
   const handleButtonClick = () => {
     alert("Button is clicked.");
