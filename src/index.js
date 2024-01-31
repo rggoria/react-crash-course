@@ -24,15 +24,14 @@ const BookList = () => {
   return (
     <section className="booklist">
       {books.map((book) => {
-        const { img, title, author, id } = book;
-        return <Books img={img} title={title} author={author} key={id} />;
+        return <Books book={book} key={book.id} />;
       })}
     </section>
   );
 };
 
 const Books = (props) => {
-  const { img, title, author, children } = props;
+  const { img, title, author, children } = props.book;
   return (
     <article className="book">
       <img src={img} alt={title} />
