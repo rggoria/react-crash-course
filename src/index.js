@@ -23,9 +23,33 @@ const books = [
 const BookList = () => {
   return (
     <section className="booklist">
+      <EventExamples />
       {books.map((book) => {
         return <Books {...book} key={book.id} />;
       })}
+    </section>
+  );
+};
+
+const EventExamples = () => {
+  const handleFormInput = () => {
+    alert("Input is pressed");
+  };
+  const handleButtonClick = () => {
+    alert("Button is clicked.");
+  };
+  return (
+    <section>
+      <form>
+        <h2>Typical Form</h2>
+        <input
+          type="text"
+          name="example"
+          onChange={handleFormInput}
+          style={{ margin: "1rem 0" }}
+        />
+      </form>
+      <button onClick={handleButtonClick}>Click Me</button>
     </section>
   );
 };
