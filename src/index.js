@@ -1,25 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { books } from "./books";
-import Book from "./Book";
-
-// Reference Link:
-// https://www.amazon.com/Best-Sellers-Books/zgbs/books
-
-const BookList = () => {
-  return (
-    <>
-      <h1>Amazon Best Sellers in Books</h1>
-      <section className="booklist">
-        {books.map((book, index) => {
-          return <Book {...book} key={book.id} number={index} />;
-        })}
-      </section>
-    </>
-  );
-};
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<BookList />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
