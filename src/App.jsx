@@ -1,9 +1,12 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Selected from "./tutorial/1-useState/05-useState-gotcha";
 import "./App.css";
 
 function App() {
-  return <h1>Hello Ma! Vite</h1>;
+  return (
+    <div className="container">
+      <Selected />
+    </div>
+  );
 }
 
 export default App;
