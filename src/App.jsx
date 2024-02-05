@@ -1,4 +1,4 @@
-import Selected from "./tutorial/1-useState/05-useState-gotcha";
+import Selected from "./tutorial/2-UseEffect/04-useEffect-fetch-data";
 import "./App.css";
 
 function App() {
