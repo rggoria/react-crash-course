@@ -1,4 +1,4 @@
-import Selected from "./tutorial/2-UseEffect/04-useEffect-fetch-data";
+import Selected from "./tutorial/3-conditional-rendering/07-user-challenge";
 import "./App.css";
 
 function App() {
