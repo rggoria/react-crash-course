@@ -1,10 +1,12 @@
-import Selected from "./tutorial/2-useEffect/05-cleanup-function";
+import { Test } from "./Test";
 import "./App.css";
+import Example from "./tutorial/4-project-structure/Example";
 
 function App() {
   return (
     <div className="container">
-      <Selected />
+      <Example />
+      <Test />
     </div>
   );
 }
