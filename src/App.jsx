@@ -1,11 +1,10 @@
+import Selected from "./tutorial/6-forms/05-form-data-api";
 import "./App.css";
-import List from "./tutorial/5-leverage-javascript/List";
 
 function App() {
   return (
     <div>
-      <h2>Leverage JavaScript</h2>
-      <List />
+      <Selected />
     </div>
   );
 }
