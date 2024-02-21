@@ -1,10 +1,13 @@
-import Selected from "./tutorial/8-custom-hook/02-user-challenge";
 import "./App.css";
+import { useGlobalContext } from "./tutorial/9-context-api/04-global-context/context";
 
 function App() {
+  const { name } = useGlobalContext();
+  console.log(name);
+
   return (
     <div>
-      <Selected />
+      <h5>Global Context</h5>
     </div>
   );
 }
