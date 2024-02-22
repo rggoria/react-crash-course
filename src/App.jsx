@@ -1,4 +1,4 @@
-import Selected from "./tutorial/10-useReducer/01-useReducer";
+import Selected from "./tutorial/11-performance/07-suspense-api";
 import "./App.css";
 
 function App() {
